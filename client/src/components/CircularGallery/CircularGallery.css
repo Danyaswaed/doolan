@@ -1,0 +1,12 @@
+.circular-gallery {
+  width: calc(100vw - 80px); /* ריווח 40 פיקסלים מכל צד */
+  margin: 0 auto; /* מרכז את הגלריה בתוך הדף */
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  cursor: grab;
+}
+
+.circular-gallery:active {
+  cursor: grabbing;
+}

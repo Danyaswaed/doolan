@@ -1,0 +1,145 @@
+/* צבעים כלליים */
+:root {
+  --color-bg-main: #ffffff;
+  --color-bg-box: #f9f9f9;
+  --color-accent: #96c6c2;
+  --color-accent-hover: #bfdcd9;
+  --color-text-main: #2e2e2e;
+  --color-text-subtle: #6b6b6b;
+  --color-border: #e3e3e3;
+  --color-section-bg: #f2f0ed;
+}
+
+.campingPage {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.imageTrailContainer {
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+  background-color: var(--color-bg-main);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.imageTrailContainer .content {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-bg-main);
+}
+
+.pageTitle {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pageTitle h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #2c3e50;
+  line-height: 1.2;
+}
+
+/* Camping Section */
+.campingSection {
+  padding: 60px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.campingGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Loading State */
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  text-align: center;
+}
+
+.spinner {
+  font-size: 2.5rem;
+  color: #3498db;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Error Message */
+.errorMessage {
+  background: #ffebee;
+  color: #c62828;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  text-align: center;
+  border-left: 4px solid #c62828;
+}
+
+/* No Results */
+.noResults {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin: 30px 0;
+}
+
+.noResults h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.noResults p {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pageTitle h1 {
+    font-size: 2.2rem;
+  }
+
+  .campingGrid {
+    grid-template-columns: 1fr;
+  }
+}
+.discoverSection {
+  padding: 40px 20px 20px;
+  background-color: var(--color-section-bg);
+  text-align: center;
+}
+
+.pageTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.subTitle {
+  font-size: 1.2rem;
+  color: var(--color-text-subtle);
+  margin-bottom: 40px;
+}
